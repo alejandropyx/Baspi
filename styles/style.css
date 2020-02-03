@@ -1,0 +1,311 @@
+body, html, #Home, #People  {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.navbar ,.navbar-expand-lg{
+	   position:fixed;
+  z-index:100;
+  top:0;
+  width: 100%;
+  
+  background-color:rgba(255,255,255,0.7);
+}
+
+.dropdown-menu{
+	
+	background-color:rgba(255,255,255,0.7);
+}
+
+.nav-link{
+	color: rgba(0,0,0,0.5);
+	
+}
+
+.nav-link:hover{
+	color: rgba(0,0,0,0.9);
+	
+	
+}
+
+.nav-link:hover i{
+	color:rgba(75, 104, 225,0.8);
+	}
+	
+.nav-link i:hover{
+	color:rgba(75, 104, 225,0.8);
+	}
+	
+
+.active a{
+	color: rgba(0,0,0,1);
+	
+}
+
+
+
+.nameGroup{	
+	color:#000080;
+	font-size: 36px;
+}
+
+i{
+	color:rgba(119,163,207,0.68);
+}
+
+i:hover{
+	color:rgba(75, 104, 225,0.8);
+}
+.parallax {
+  /* The image used */
+  background-image: url('../img/img2.jpg');
+
+  /* Full height */
+  height: 50%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page{
+	
+	
+}
+.sectionPeople{	
+  height: 50%;
+  margin: 0;
+}
+
+.elementor-divider-separator{
+	--divider-border-style: solid;
+    --divider-border-color: #48b1f2;
+    --divider-border-width: 2px;
+	
+}
+
+.bkpeople{
+    background-color: #0c0909;
+    background-image: url('../img/People.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin: 0;
+	position:relative;
+}
+.darker{
+	background-color: #0c0c0c;
+    opacity: 0.4;
+	height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+	
+}
+.contentImgD{
+	display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+	
+
+
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+	 direction: ltr;
+
+}
+.elementor-shape-fill{
+		fill: #fff;
+   
+	-webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+
+.elementor-shape-bottom {
+    bottom: -1px;
+}
+
+.titlePeople{
+	padding-top:50px;
+	text-align: center;
+	
+}
+
+.line{
+	border: solid;
+    /* width: 500px; */
+    height: 2px;
+    border-bottom: 1px;
+    border-color: blue;
+	opacity:0.5;
+    padding: 0;
+    margin: 0;
+	
+}
+
+.imgPeople {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+	max-width:100%;
+max-height:100%;
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .3s ease-in-out;  
+    }
+	
+.imgGraduate{
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+		max-width:100%;
+		max-height:100%;
+		border-radius: 50%;
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .3s ease-in-out;  
+    }
+	
+	
+
+.imgGraduate:hover {
+	max-width:100%;
+max-height:100%;
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+	
+.imgsPeople{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0; 
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    width: 80%;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textGraduate{
+	
+	align-content: center;
+    /* background-color: rgba(0,0,0,0.5); */
+    color: #777;
+    font-size: 16px;
+    padding: 0;
+	margin: 0;
+    text-align: center;
+	
+}
+
+.imgContainer:hover .imgPeople{
+		max-width:100%;
+max-height:100%;
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+	
+}
+
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.middle:hover .imgPeople{
+  	max-width:100%;
+max-height:100%;
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+}
+
+.text {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+#loading {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 992px) { 
+
+.logoJave{
+	background-image: url('../img/logo_puj.png');
+
+  /* Full height */
+  /*height: 100%; */
+  
+  width:248px;
+  height:83px;
+
+  /* Create the parallax scrolling effect */
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+	
+	
+}
+}
+
+@media (max-width: 992px) { 
+
+.logoJave{
+	background-image: url('../img/logo_puj2.png');
+
+  /* Full height */
+  /*height: 100%; */
+  
+  width:60px;
+  height:76.8px;
+
+  /* Create the parallax scrolling effect */
+  
+  background-position: center;
+  background-repeat: no-repeat;
+    background-size: 60px 76.8px;
+	
+	
+}
+
+ }
